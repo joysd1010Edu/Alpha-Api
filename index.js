@@ -13,10 +13,10 @@ const PORT = process.env.PORT || 5000;
 app.use(bodyParser.json());
 app.use(cors());
 
-require("./../DB/Connection");
+require("./DB/Connection");
 
 // Routes
-const laptopRoutes = require('./../Routes/Laptop');
+const laptopRoutes = require('./Routes/Laptop');
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Alpha API');
