@@ -17,6 +17,7 @@ require("./DB/Connection");
 
 // Routes
 const laptopRoutes = require('./Routes/Laptop');
+const UserCredit = require('./Routes/UserCredit');
 
 app.get('/', (req, res) => {
     res.send('Welcome to the Alpha API');
@@ -24,6 +25,7 @@ app.get('/', (req, res) => {
 
 // Use Routes
 app.use('/laptops', laptopRoutes);
+app.use('/user', UserCredit);
 
 // Start the server
 app.listen(PORT, () => {
