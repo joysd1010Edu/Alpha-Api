@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-// const Laptop = require('./../Models/LaptopModel');
+const Laptop = require('./../Models/LaptopModel');
 const UserCredit = require('./../Models/UserCredentialModel');
 
 router.get("/:uid", async (req, res) => {
